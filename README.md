@@ -17,8 +17,13 @@ This project focuses on improving the agility of e-commerce operations by implem
 
 ## Workflow
 Data Upload: Users upload "order" and "returned" data files via the Streamlit application.
+
 Trigger Lambda Function: The upload triggers a Lambda function that starts the Glue ETL job.
+
 ETL Processing: The Glue job processes the files, performing data transformations and joining datasets.
+
 Store Results: The joined dataset is stored in Amazon Redshift for further analysis.
+
 Monitor with Step Functions: The entire process is monitored using AWS Step Functions.
+
 Notifications: Email notifications are sent to inform users of the execution status.
